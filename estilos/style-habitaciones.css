@@ -1,0 +1,263 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Marcellus", serif;
+    font-weight: 400;
+    font-style: normal;
+    overflow-x: hidden;
+    background-image:  linear-gradient(rgba(37, 37, 37, 0.5), rgba(38, 38, 38, 0.5)),
+                        url('../imagenes/portada.JPG');
+    background-size: cover; 
+    background-position: center;  
+    background-attachment: scroll;
+    min-height: 100vh;
+    gap: 20px;
+}
+
+header{
+    width: 100%;
+    height: 20vh;
+    background: transparent;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.6);
+}
+
+.seccion-header {
+    text-align: center;
+}
+
+.titulo{
+    font-size: 2rem;
+    color: #fff; 
+    font-weight: 400;
+    position: absolute;
+    top: 8%;
+    left: 40%;
+}
+
+.titulo span {
+    color: #F0EADF;
+    font-weight: 600;
+}
+
+.logo {
+    width: 120px;
+    height: 120px;
+    margin: 10px;
+}
+
+.volver-btn {
+    text-decoration: none;
+    width: 130px;
+    padding: 10px;
+    background-color: rgba(218, 184, 71, 0.9);
+    opacity: 0.8;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 17px;
+    font-family: "Marcellus", serif;
+    position: absolute;
+    top: 7%;
+    right: 2%;
+}
+        
+.volver-btn:hover {
+    background-color: rgba(212, 175, 55, 1);
+}
+
+.contenedor{
+    max-width: 1400px;
+    margin: 50px auto;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+.seccion-galeria {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.imagen-principal {
+    width: 100%;
+    height: 450px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.imagen-principal img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.imagenes-secundarias {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.imagen{
+    height: 150px;
+    overflow: hidden;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.imagen img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.seccion-detalles{
+    background: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.seccion-detalles h2 {
+    color: #333;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    border-bottom: 3px solid #d4af37;
+    padding-bottom: 15px;
+    font-family: "Marcellus", serif;
+}
+
+.detalles-habitacion {
+    margin: 30px 0;
+}
+
+.icono-razon {
+    width: 40px;
+    height: 40px;
+    margin-right: 15px;
+}
+
+.detalles {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+}
+
+.detalles:hover {
+    background-color: #f0f0f0;
+}
+
+.detalles-text h3 {
+    color: #333;
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+
+.detalles-text p {
+    color: #666;
+    line-height: 1.6;
+}
+
+.servicios {
+    margin-top: 30px;
+}
+
+.servicios h3 {
+    color: #333;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.servicios-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.servicio-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+}
+
+.servicio-item::before {
+    content: "✓";
+    color: #d4af37;
+    font-weight: bold;
+    margin-right: 10px;
+    font-size: 1.2em;
+}
+
+.seccion-precio {
+    margin-top: 40px;
+    padding: 5px;
+    background: linear-gradient(100deg, #d4af37 20%, #f4e5a1 100%);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.seccion-precio h3 {
+    color: white;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.precio {
+    color: white;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.precio-p {
+    color: white;
+    margin-top: 10px;
+    font-size: 1rem;
+}
+
+.btn {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 15px 40px;
+    background-color: white;
+    color: #d4af37;
+    border: none;
+    border-radius: 25px;
+    font-size: 1.2em;
+    font-weight: bold;
+    cursor: pointer;
+    font-family: "Marcellus", serif;
+}
+
+.btn a {
+    text-decoration: none;
+    color: #d4af37;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+}
+
+footer {
+    width: 100%;
+    height: 150px;
+    background: transparent;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.6);
+    opacity: 0.8;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;    
+}

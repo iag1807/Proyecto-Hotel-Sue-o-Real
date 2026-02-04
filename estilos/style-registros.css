@@ -1,0 +1,207 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Marcellus", serif;
+    font-weight: 400;
+    font-style: normal;
+    overflow-x: hidden;
+    background-image:  linear-gradient(rgba(37, 37, 37, 0.5), rgba(38, 38, 38, 0.5)),
+                        url('../imagenes/portada.JPG');
+    background-size: cover; 
+    background-position: center;  
+    background-attachment: fixed;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.container{
+    margin-top: 20px;
+    width: 600px;
+    padding: 20px;
+    border: 1px solid #6E5A13;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    opacity: 0.8;
+}
+h1{
+    text-align: center;
+    margin-bottom: 10px;
+    color: #6E5A13;
+    font-weight: 800;
+}
+p{
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 15px;
+    color: #6E5A13;
+}
+p a{
+    color: #6E5A13;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+form label{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-bottom: 0; 
+    font-weight: bold;
+    color: #6E5A13;
+    align-items: flex-start;
+    height: 100%;
+}
+
+form label .label-text {
+    display: block;
+    font-weight: bold;
+}
+
+form .form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    grid-auto-flow: column;
+    gap: 12px 20px;
+    align-items: stretch;
+}
+
+form .form-grid > label {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 6px;
+}
+
+form .form-grid input,
+form .form-grid select {
+    margin-bottom: 0;
+    height: 44px;
+    padding: 8px 10px;
+    font-size: 16px;
+    box-sizing: border-box;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form .form-display {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px 20px;
+    margin-left: 50px;
+}
+
+form .form-display > label {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 6px;
+}
+
+form .form-display input,
+form .form-display select {
+    margin-bottom: 10px;
+    height: 44px;
+    font-size: 16px;
+    box-sizing: border-box;
+    width: 450px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form .submit-btn {
+    display: block;
+    width: 100%;
+    margin-top: 12px;
+    height: 44px;
+    padding: 8px 10px;
+    font-size: 16px;
+    background-color: #6E5A13;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form .submit-btn2 {
+    display: block;
+    width: 100%;
+    height: 44px;
+    font-size: 16px;
+    background-color: #6E5A13;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+@media (max-width: 700px) {
+    form .form-grid {
+        grid-template-columns: 1fr;
+        grid-auto-flow: row;
+        grid-template-rows: none;
+    }
+    form .form-grid .full-width {
+        grid-column: auto;
+    }
+}
+form input{
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+form select{
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+form button{
+    width: 100%;
+    padding: 10px;
+    background-color: #6E5A13;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    height: 44px;
+}
+form button:hover{
+    background-color: #6E5A13;
+}
+.success-message{
+    color: green;
+    text-align: center;
+    margin-top: 15px;
+}
+.btn{
+    width: 150px;
+    padding: 10px;
+    background-color: #6E5A13;
+    opacity: 0.8;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: "Marcellus", serif;
+    margin-bottom: 20px;
+}
+.btn:hover{
+    background-color: #6E5A11;
+    color: #fff;
+    font-weight: 600;
+}
