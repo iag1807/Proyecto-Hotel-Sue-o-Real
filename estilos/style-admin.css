@@ -9,7 +9,7 @@ body{
     font-style: normal;
     overflow-x: hidden;
     background-image:  linear-gradient(rgba(37, 37, 37, 0.5), rgba(38, 38, 38, 0.5)),
-                        url('../imagenes/portada3.JPG');
+                        url('../imagenes/portada.JPG');
     background-size: cover; 
     background-position: center;  
     background-attachment: fixed;
