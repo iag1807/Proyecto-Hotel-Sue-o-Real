@@ -23,7 +23,7 @@ if(!isset($_SESSION['rol']) || $_SESSION['rol'] !== 'cliente'){
         <img class="logo" src="../imagenes/LogoHotel.png" alt="">
         <div class="seccion-header">
             <h1 class="titulo"> HABITACIÓN <span> MULTIPLE </span></h1>
-            <a href="../cliente.php" class="volver-btn">Volver</a>
+            <a href="../index.html" class="volver-btn">Volver</a>
         </div>
     </header>
 
