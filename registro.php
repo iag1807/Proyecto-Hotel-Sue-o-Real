@@ -24,7 +24,7 @@ session_start();
             </label>
 
             <label for="tipo_documento"><span class="label-text">Tipo de documento</span>
-                <select name="tipo_documento" id="tipo_documento">
+                <select name="tipo_documento" id="tipo_documento" class="input-select">
                     <option value="">Seleccione un tipo de documento</option>
                     <option value="C.C">Cedula de ciudadania</option>
                     <option value="C.T">Cedula de extranjeria</option>
