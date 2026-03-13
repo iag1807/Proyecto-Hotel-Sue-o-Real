@@ -48,12 +48,16 @@ session_start();
                 <input type="password" name="clave" id="clave">
             </label>
 
-            <label for="direccion"><span class="label-text">Direccion</span>
-                <input type="text" name="direccion" id="direccion">
-            </label>
-
             <label for="celular"><span class="label-text">Celular</span>
                 <input type="text" name="celular" id="celular">
+            </label>
+
+            <label for="genero"><span class="label-text">Genero</span>
+                <select name="genero" id="genero" class="input-select">
+                    <option value="">Seleccione un genero</option>
+                    <option value="Masculino">Masculino</option>
+                    <option value="Femenino">Femenino</option>
+                </select>
             </label>
         </div>
 
