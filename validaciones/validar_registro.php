@@ -11,11 +11,11 @@ $nombre= $_POST['nombre'];
 $apellidos= $_POST['apellidos'];
 $correo= $_POST['correo'];
 $clave= $_POST['clave'];
-$direccion= $_POST['direccion'];
+$genero= $_POST['genero'];
 $celular= $_POST['celular'];
 $errores= [];
 
-if(empty($_POST['documento']) || empty($_POST['tipo_documento']) || empty($_POST['nombre']) || empty($_POST['apellidos']) || empty($_POST['correo']) || empty($_POST['clave']) || empty($_POST['direccion']) || empty($_POST['celular'])){
+if(empty($_POST['documento']) || empty($_POST['tipo_documento']) || empty($_POST['nombre']) || empty($_POST['apellidos']) || empty($_POST['correo']) || empty($_POST['clave']) || empty($_POST['genero']) || empty($_POST['celular'])){
     $errores[]="El formulario esta incompleto";
 
 }elseif(!ctype_digit($documento)) {
@@ -48,8 +48,8 @@ if(empty($_POST['documento']) || empty($_POST['tipo_documento']) || empty($_POST
 }elseif(strlen($clave) < 8){
     $errores[]= "La clave debe tener como minimo 8 caracteres";
 
-}elseif(!is_string($direccion)){
-    $errores[]= "Direccion invalida";
+}elseif(!in_array($genero, ['Masculino','Femenino'])){
+    $errores[]= "Genero invalido";
 
 }elseif(!ctype_digit($celular)){
     $errores[]= "El celular solo debe contener numeros";
@@ -65,9 +65,9 @@ require_once '../conexion.php';
 
 $clave= password_hash($clave, PASSWORD_DEFAULT);
 
-$sql= "INSERT INTO clientes(documento, tipo_documento, nombre, apellidos, correo, clave, direccion, celular) VALUES (?,?,?,?,?,?,?,?)";
+$sql= "INSERT INTO clientes(documento, tipo_documento, nombre, apellidos, correo, clave, genero, celular) VALUES (?,?,?,?,?,?,?,?)";
 $stmt= mysqli_prepare($conn, $sql);
-mysqli_stmt_bind_param($stmt, "isssssss", $documento, $tipo_documento, $nombre, $apellidos, $correo, $clave, $direccion, $celular);
+mysqli_stmt_bind_param($stmt, "isssssss", $documento, $tipo_documento, $nombre, $apellidos, $correo, $clave, $genero, $celular);
 mysqli_stmt_execute($stmt);
 mysqli_stmt_close($stmt);
 
