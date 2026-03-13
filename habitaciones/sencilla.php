@@ -1,11 +1,3 @@
-<?php
-session_start();
-
-if(!isset($_SESSION['rol']) || $_SESSION['rol'] !== 'cliente'){
-    header("location: index.php");
-    exit();
-}
-?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -88,7 +80,7 @@ if(!isset($_SESSION['rol']) || $_SESSION['rol'] !== 'cliente'){
 
             <div class="seccion-precio">
                 <h3>Desde</h3>
-                <div class="precio">$80.000</div>
+                <div class="precio">$50.000</div>
                 <p class="precio-p">Por noche</p>
                 <button class="btn"><a href="../reserva.php">Reservar Ahora</a></button>
             </div>

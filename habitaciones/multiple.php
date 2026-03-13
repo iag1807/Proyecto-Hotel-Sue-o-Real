@@ -1,11 +1,3 @@
-<?php
-session_start();
-
-if(!isset($_SESSION['rol']) || $_SESSION['rol'] !== 'cliente'){
-    header("location: index.php");
-    exit();
-}
-?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
