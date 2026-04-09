@@ -93,15 +93,17 @@
   }
 
   .sidebar-bottom a {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    color: rgba(240,236,228,0.4);
-    text-decoration: none;
-    font-size: 0.72rem;
-    letter-spacing: 0.12em;
-    text-transform: uppercase;
-    transition: color 0.3s;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: rgba(240, 236, 228, 0.4);
+  text-decoration: none;
+  font-size: 0.72rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  transition: color 0.3s;
+  position: absolute;
+  bottom: 40px;
   }
   .sidebar-bottom a:hover { color: var(--gold); }
 
@@ -221,5 +223,5 @@
 
   .badge-confirmada { background: rgba(90,200,120,0.15); color: #5ac878; text-decoration: none; }
   .badge-cancelada { background: rgba(220,80,80,0.12); color: #dc5050; text-decoration: none; }
-  .badge-finalizada { background: rgba(201,169,110,0.15); color: #c9a96e; text-decoration: none; margin-top: 5px; }
+  .badge-finalizada { background: rgba(69, 68, 68, 0.15); color: #777; text-decoration: none; margin-top: 5px; }
   

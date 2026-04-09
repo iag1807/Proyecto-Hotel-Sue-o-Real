@@ -236,7 +236,7 @@ $res_hab      = mysqli_query($conn, "SELECT id_habitacion, numero, tipo_habitaci
                     <div class="field">
                         <label>Estado</label>
                         <select name="estado" required>
-                            <?php foreach (['confirmada','cancelada','finalizada'] as $e): ?>
+                            <?php foreach (['pendiente','confirmada','cancelada','finalizada'] as $e): ?>
                                 <option value="<?php echo $e; ?>"
                                     <?php echo ($reserva['estado'] === $e) ? 'selected' : ''; ?>>
                                     <?php echo ucfirst($e); ?>

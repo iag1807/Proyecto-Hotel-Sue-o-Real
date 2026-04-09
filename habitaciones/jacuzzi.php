@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Habitación Con Jacuzzi</title>
-     <link rel="shortcut icon" href="../imagenes/LogoHotel.png">
+    <link rel="shortcut icon" href="../imagenes/LogoHotel.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Marcellus&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../estilos/style-habitaciones.css">
 </head>
+
 <body>
     <header>
         <img class="logo" src="../imagenes/LogoHotel.png" alt="">
@@ -25,7 +27,7 @@
                 <img src="../imagenes/jacuzzi.jpeg" alt="" loading="lazy">
             </div>
             <div class="imagenes-secundarias">
-                <div class="imagen" >
+                <div class="imagen">
                     <img src="../imagenes/imagen.jpg" alt="" loading="lazy">
                 </div>
                 <div class="imagen">
@@ -44,11 +46,11 @@
                     <img src="../imagenes/jacuzzi1.jpeg" alt="" loading="lazy">
                 </div>
             </div>
-</div>
+        </div>
 
         <div class="seccion-detalles">
             <h2>DETALLES</h2>
-            
+
             <div class="detalles-habitacion">
                 <div class="detalles">
                     <img class="icono-razon" src="../imagenes/icono-cama.png" alt="">
@@ -90,7 +92,8 @@
     </div>
 
     <footer>
-    <img class="logo" src="../imagenes/LogoHotel.png" alt="">
+        <img class="logo" src="../imagenes/LogoHotel.png" alt="">
     </footer>
 </body>
+
 </html>

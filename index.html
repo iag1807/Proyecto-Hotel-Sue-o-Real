@@ -1,37 +1,57 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hotel Sueño Real</title>
-    <link rel="stylesheet" href="estilos/style.css">
-    <link rel="shortcut icon" href="imagenes/LogoHotel.png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Marcellus&display=swap" rel="stylesheet">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hotel Sueño Real</title>
+    <link rel="stylesheet" href="estilos/style.css" />
+    <link rel="shortcut icon" href="imagenes/LogoHotel.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap" rel="stylesheet"/>
+  </head>
+  <body>
     <header>
       <div class="container">
         <div class="header-inner">
           <div class="header-left">
             <nav>
               <ul>
-                <li><a href="#habitaciones"><button class="header-btn">Habitaciones</button></a></li>
-                <li><a href="#sobre-nosotros"><button class="header-btn">Sobre nosotros</button></a></li>
+                <li>
+                  <a href="#habitaciones"
+                    ><button class="header-btn">Habitaciones</button></a
+                  >
+                </li>
+                <li>
+                  <a href="#sobre-nosotros"
+                    ><button class="header-btn">Sobre nosotros</button></a
+                  >
+                </li>
               </ul>
             </nav>
           </div>
 
           <div class="header-center">
-            <img class="logo" src="imagenes/LogoHotel.png" alt="Hotel Sueño Real">
+            <img
+              class="logo"
+              src="imagenes/LogoHotel.png"
+              alt="Hotel Sueño Real"
+            />
           </div>
 
           <div class="header-right">
             <nav>
               <ul>
-                <li><a href="#ubicacion"><button class="header-btn">Ubicación</button></a></li>
-                <li><a href="registro.php"><button class="header-btn">Registrarse</button></a></li>
+                <li>
+                  <a href="#ubicacion"
+                    ><button class="header-btn">Ubicación</button></a
+                  >
+                </li>
+                <li>
+                  <a href="registro.php"
+                    ><button class="header-btn">Registrarse</button></a
+                  >
+                </li>
               </ul>
             </nav>
           </div>
@@ -39,267 +59,343 @@
       </div>
     </header>
 
-  <section class="contenedor-carrusel">
-    <div class="carousel-slides" id="slides">
-      <div class="slide" style="background-image: url('imagenes/portada.JPG');">
-        <div class="slide-content">
-          <h1>Tu descanso,<br>nuestra prioridad.</h1>
-          <a href="#habitaciones" class="btn">Haz tu reserva</a>
+    <section class="contenedor-carrusel">
+      <div class="carousel-slides" id="slides">
+        <div
+          class="slide"
+          style="background-image: url(&quot;imagenes/moño2.jpg&quot;), linear-gradient(rgba(37, 37, 37, 0.9), rgba(38, 38, 38, 0.9))"
+        >
+          <div class="slide-content">
+            <h1>Tu descanso,<br />nuestra prioridad.</h1>
+            <a href="#habitaciones" class="btn">Haz tu reserva</a>
+          </div>
+        </div>
+
+        <div
+          class="slide"
+          style="background-image: url(&quot;imagenes/sencilla2.jpg&quot;), linear-gradient(rgba(37, 37, 37, 0.9), rgba(38, 38, 38, 0.9))"
+        >
+          <div class="slide-content">
+            <h1>Tu descanso,<br />nuestra prioridad.</h1>
+            <a href="#habitaciones" class="btn">Haz tu reserva</a>
+          </div>
+        </div>
+
+        <div
+          class="slide"
+          style="background-image: url(&quot;imagenes/baño.jpeg&quot;), linear-gradient(rgba(37, 37, 37, 0.9), rgba(38, 38, 38, 0.9))"
+        >
+          <div class="slide-content">
+            <h1>Tu descanso,<br />nuestra prioridad.</h1>
+            <a href="#habitaciones" class="btn">Haz tu reserva</a>
+          </div>
+        </div>
+
+        <div
+          class="slide"
+          style="background-image: url(&quot;imagenes/moño.jpeg&quot;), linear-gradient(rgba(37, 37, 37, 0.9), rgba(38, 38, 38, 0.9))"
+        >
+          <div class="slide-content">
+            <h1>Tu descanso,<br />nuestra prioridad.</h1>
+            <a href="#habitaciones" class="btn">Haz tu reserva</a>
+          </div>
+        </div>
+
+        <div
+          class="slide"
+          style="background-image: url(&quot;imagenes/portada.jpg&quot;), linear-gradient(rgba(37, 37, 37, 0.9), rgba(38, 38, 38, 0.9))"
+        >
+          <div class="slide-content">
+            <h1>Tu descanso,<br />nuestra prioridad.</h1>
+            <a href="#habitaciones" class="btn">Haz tu reserva</a>
+          </div>
         </div>
       </div>
 
-      <div class="slide" style="background-image: url('imagenes/moño.jpeg');">
-        <div class="slide-content">
-          <h1>Tu descanso,<br>nuestra prioridad.</h1>
-          <a href="#habitaciones" class="btn">Haz tu reserva</a>
+      <div class="carousel-indicators" id="indicators"></div>
+    </section>
+
+    <section class="servicios-container">
+      <div class="servicios-grid">
+        <div class="servicio-card">
+          <img src="imagenes/icono-hotel.png" alt="" />
+          <h3><span>Hotel</span></h3>
+          <p>
+            Contamos con habitaciones sencillas, con bañera, con jacuzzi,
+            dobles, triples y multiples.
+          </p>
+        </div>
+
+        <div class="servicio-card">
+          <img src="imagenes/icono-servicio.png" alt="" />
+          <h3><span>Servicios</span></h3>
+          <p>
+            Ofrecemos wifi gratuito en todas las areas del hotel y un minibar
+            equipado para tu comodidad durante toda tu estadia .
+          </p>
         </div>
       </div>
+    </section>
 
-      <div class="slide" style="background-image: url('imagenes/baño.jpeg');">
-        <div class="slide-content">
-          <h1>Tu descanso,<br>nuestra prioridad.</h1>
-          <a href="#habitaciones" class="btn">Haz tu reserva</a>
-        </div>
+    <div id="habitaciones"></div>
+
+    <section class="habitaciones-section">
+      <div class="section-header">
+        <p class="section-subtitle">Conoce</p>
+        <h1 class="section-title">NUESTRAS <span>HABITACIONES</span></h1>
       </div>
 
-      <div class="slide" style="background-image: url('imagenes/recepcion.jpeg');">
-        <div class="slide-content">
-          <h1>Tu descanso,<br>nuestra prioridad.</h1>
-          <a href="#habitaciones" class="btn">Haz tu reserva</a>
+      <div class="habitaciones-grid">
+        <div class="habitacion-card">
+          <img class="habitacion-imagen" src="imagenes/sencilla.jpeg" alt="" />
+          <div class="habitacion-content">
+            <h3 class="habitacion-nombre">Sencilla</h3>
+            <p class="habitacion-detalles">
+              Cama semidoble, baño privado, televisor
+            </p>
+            <p class="habitacion-detalles">Internet gratuito</p>
+            <a href="habitaciones/sencilla.php" class="btn-reservar"
+              >Ver detalles</a
+            >
+          </div>
+        </div>
+
+        <div class="habitacion-card">
+          <img class="habitacion-imagen" src="imagenes/bañera.jpeg" alt="" />
+          <div class="habitacion-content">
+            <h3 class="habitacion-nombre">Con bañera</h3>
+            <p class="habitacion-detalles">
+              Cama semidoble, baño privado, bañera, televisor
+            </p>
+            <p class="habitacion-detalles">Internet gratuito</p>
+            <a href="habitaciones/bañera.php" class="btn-reservar"
+              >Ver detalles</a
+            >
+          </div>
+        </div>
+
+        <div class="habitacion-card">
+          <img class="habitacion-imagen" src="imagenes/jacuzzi.jpeg" alt="" />
+          <div class="habitacion-content">
+            <h3 class="habitacion-nombre">Con jacuzzi</h3>
+            <p class="habitacion-detalles">
+              Cama semidoble, baño privado, jacuzzi, televisor
+            </p>
+            <p class="habitacion-detalles">Internet gratuito</p>
+            <a href="habitaciones/jacuzzi.php" class="btn-reservar"
+              >Ver detalles</a
+            >
+          </div>
+        </div>
+
+        <div class="habitacion-card">
+          <img class="habitacion-imagen" src="imagenes/doble.jpeg" alt="" />
+          <div class="habitacion-content">
+            <h3 class="habitacion-nombre">Doble</h3>
+            <p class="habitacion-detalles">
+              Dos camas semidobles, baño privado, televisor
+            </p>
+            <p class="habitacion-detalles">Internet gratuito</p>
+            <a href="habitaciones/doble.php" class="btn-reservar"
+              >Ver detalles</a
+            >
+          </div>
+        </div>
+
+        <div class="habitacion-card">
+          <img class="habitacion-imagen" src="imagenes/triple.jpeg" alt="" />
+          <div class="habitacion-content">
+            <h3 class="habitacion-nombre">Triple</h3>
+            <p class="habitacion-detalles">
+              Una cama semidoble, un camarote, baño privado, televisor
+            </p>
+            <p class="habitacion-detalles">Internet gratuito</p>
+            <a href="habitaciones/triple.php" class="btn-reservar"
+              >Ver detalles</a
+            >
+          </div>
+        </div>
+
+        <div class="habitacion-card">
+          <img class="habitacion-imagen" src="imagenes/multiple.jpeg" alt="" />
+          <div class="habitacion-content">
+            <h3 class="habitacion-nombre">Multiple</h3>
+            <p class="habitacion-detalles">
+              Dos camarotes, una cama de un metro, baño privado, televisor
+            </p>
+            <p class="habitacion-detalles">Internet gratuito</p>
+            <a href="habitaciones/multiple.php" class="btn-reservar"
+              >Ver detalles</a
+            >
+          </div>
         </div>
       </div>
-
-      <div class="slide" style="background-image: url('imagenes/escalas.jpeg');">
-        <div class="slide-content">
-          <h1>Tu descanso,<br>nuestra prioridad.</h1>
-          <a href="#habitaciones" class="btn">Haz tu reserva</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="carousel-indicators" id="indicators"></div>
-  </section>
-
-  <section class="servicios-container">
-        <div class="servicios-grid">
-            <div class="servicio-card">
-                <img src="imagenes/icono-hotel.png" alt="">
-                <h3><span>Hotel</span></h3>
-                <p>Contamos con habitaciones sencillas, con bañera, con jacuzzi, dobles, triples y multiples.</p>
-            </div>
-
-            <div class="servicio-card">
-                <img src="imagenes/icono-servicio.png" alt="">
-                <h3><span>Servicios</span></h3>
-                <p>Ofrecemos wifi gratuito en todas las areas del hotel y un minibar equipado para tu comodidad durante toda tu estadia .</p>
-            </div>
-        </div>
-  </section>
-
-  <div id="habitaciones"></div>
-
-  <section class="habitaciones-section">
-        <div class="section-header">
-            <p class="section-subtitle">Conoce</p>
-            <h1 class="section-title">NUESTRAS <span>HABITACIONES</span></h1>
-        </div>
-
-        <div class="habitaciones-grid">
-            <div class="habitacion-card">
-                <img class="habitacion-imagen" src="imagenes/sencilla.jpeg" alt="">
-                <div class="habitacion-content">
-                    <h3 class="habitacion-nombre">Sencilla</h3>
-                    <p class="habitacion-detalles">Cama semidoble, baño privado, televisor</p>
-                    <p class="habitacion-detalles">Internet gratuito</p>
-                    <a href="habitaciones/sencilla.php" class="btn-reservar">Ver detalles</a>
-                </div>
-            </div>
-
-            <div class="habitacion-card">
-                <img class="habitacion-imagen" src="imagenes/bañera.jpeg" alt="">
-                <div class="habitacion-content">
-                    <h3 class="habitacion-nombre">Con bañera</h3>
-                    <p class="habitacion-detalles">Cama semidoble, baño privado, bañera, televisor </p>
-                    <p class="habitacion-detalles">Internet gratuito</p>
-                    <a href="habitaciones/bañera.php" class="btn-reservar">Ver detalles</a>
-                </div>
-            </div>
-
-            <div class="habitacion-card">
-                <img class="habitacion-imagen" src="imagenes/jacuzzi.jpeg" alt="">
-                <div class="habitacion-content">
-                    <h3 class="habitacion-nombre">Con jacuzzi</h3>
-                    <p class="habitacion-detalles">Cama semidoble, baño privado, jacuzzi, televisor</p>
-                    <p class="habitacion-detalles">Internet gratuito</p>
-                    <a href="habitaciones/jacuzzi.php" class="btn-reservar">Ver detalles</a>
-                </div>
-            </div>
-
-            <div class="habitacion-card">
-                <img class="habitacion-imagen" src="imagenes/doble.jpeg" alt="">
-                <div class="habitacion-content">
-                    <h3 class="habitacion-nombre">Doble</h3>
-                    <p class="habitacion-detalles">Dos camas semidobles, baño privado, televisor</p>
-                    <p class="habitacion-detalles">Internet gratuito</p>
-                    <a href="habitaciones/doble.php" class="btn-reservar">Ver detalles</a>
-                </div>
-            </div>
-
-            <div class="habitacion-card">
-                <img class="habitacion-imagen" src="imagenes/triple.jpeg" alt="">
-                <div class="habitacion-content">
-                    <h3 class="habitacion-nombre">Triple</h3>
-                    <p class="habitacion-detalles">Una cama semidoble, un camarote, baño privado, televisor</p>
-                    <p class="habitacion-detalles">Internet gratuito</p>
-                    <a href="habitaciones/triple.php" class="btn-reservar">Ver detalles</a>
-                </div>
-            </div>
-
-            <div class="habitacion-card">
-                <img class="habitacion-imagen" src="imagenes/multiple.jpeg" alt="">
-                <div class="habitacion-content">
-                    <h3 class="habitacion-nombre">Multiple</h3>
-                    <p class="habitacion-detalles">Dos camarotes, una cama de un metro, baño privado, televisor</p>
-                    <p class="habitacion-detalles">Internet gratuito</p>
-                    <a href="habitaciones/multiple.php" class="btn-reservar">Ver detalles</a>
-                </div>
-            </div>
-        </div>
     </section>
 
     <div id="sobre-nosotros"></div>
 
     <section class="porque-elegirnos-section">
-        <div class="contenido-razones">
-            <h2 class="titulo-seccion">¿Quienes somos?</h2>
-            
-            <div class="razones-grid">
-                <div class="razon-item">
-                    <img class="icono-razon" src="imagenes/icono-personas.png" alt="">
-                    <div class="razon-contenido">
-                        <p>Somos un hotel comprometido con brindar una experiencia inolvidable a nuestros huéspedes. 
-                        Nuestro objetivo es ofrecer un ambiente acogedor y confortable, donde cada detalle está 
-                        pensado para su bienestar y satisfacción. Desde nuestras cómodas habitaciones hasta 
-                        nuestros servicios personalizados, nos esforzamos por superar sus expectativas y 
-                        hacer que su estancia sea memorable.</p><br>
-                    </div>
-                </div>
+      <div class="contenido-razones">
+        <h2 class="titulo-seccion">¿Quienes somos?</h2>
 
-                <h2 class="titulo-seccion">¿Por qué elegirnos?</h2>
-
-                <div class="razon-item">
-                    <img class="icono-razon" src="imagenes/icono-estrellas.png" alt="">
-                    <div class="razon-contenido">
-                        <p>Nos encontramos ubicados en una zona tranquila, es la opcion ideal para quienes buscan comodidad
-                        y tranquilidad. Ofrecemos habitaciones modernas y comodas con baño privado, wifi gratuito, espacios 
-                        elegantes y un servicio amable y perzonalizado. Además, garantizamos estadia confortable y memorable.</p>
-                    </div>
-                </div>
+        <div class="razones-grid">
+          <div class="razon-item">
+            <img class="icono-razon" src="imagenes/icono-personas.png" alt="" />
+            <div class="razon-contenido">
+              <p>
+                Somos un hotel comprometido con brindar una experiencia
+                inolvidable a nuestros huéspedes. Nuestro objetivo es ofrecer un
+                ambiente acogedor y confortable, donde cada detalle está pensado
+                para su bienestar y satisfacción. Desde nuestras cómodas
+                habitaciones hasta nuestros servicios personalizados, nos
+                esforzamos por superar sus expectativas y hacer que su estancia
+                sea memorable.
+              </p>
+              <br />
             </div>
-        </div>
+          </div>
 
-        <div class="imagen-hotel"></div>
-    
+          <h2 class="titulo-seccion">¿Por qué elegirnos?</h2>
+
+          <div class="razon-item">
+            <img
+              class="icono-razon"
+              src="imagenes/icono-estrellas.png"
+              alt=""
+            />
+            <div class="razon-contenido">
+              <p>
+                Nos encontramos ubicados en una zona tranquila, es la opcion
+                ideal para quienes buscan comodidad y tranquilidad. Ofrecemos
+                habitaciones modernas y comodas con baño privado, wifi gratuito,
+                espacios elegantes y un servicio amable y perzonalizado. Además,
+                garantizamos estadia confortable y memorable.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="imagen-hotel"></div>
     </section>
 
     <div id="ubicacion"></div>
 
     <section class="ubicacion-section">
-        <div class="section-header">
-            <p class="section-subtitle-2">Conoce</p>
-            <h1 class="section-title-2">NUESTRA <span>UBICACIÓN</span></h1>
+      <div class="section-header">
+        <p class="section-subtitle-2">Conoce</p>
+        <h1 class="section-title-2">NUESTRA <span>UBICACIÓN</span></h1>
+      </div>
+
+      <div class="content-wrapper">
+        <div class="info-section">
+          <div class="info-item">
+            <div class="info-label">Dirección</div>
+            <div class="info-value">
+              Autopista Medellín-Bogotá #45-132<br />
+              La Ciudadela, Marinilla<br />
+              Antioquia, Colombia
+            </div>
+          </div>
+
+          <div class="info-item">
+            <div class="info-label">Ubicación</div>
+            <div class="info-value">
+              Km 39, Autopista Medellín-Bogotá<br />
+              (A 0.8 km del centro de Marinilla)
+            </div>
+          </div>
+
+          <div class="info-item">
+            <div class="info-label">Teléfono</div>
+            <div class="info-value">
+              <a href="tel:+573226483067">+57 3226483067</a><br />
+            </div>
+          </div>
+
+          <div class="info-item">
+            <div class="info-label">Capacidad</div>
+            <div class="info-value">
+              52 habitaciones<br />
+              Capacidad hasta 180 personas
+            </div>
+          </div>
+
+          <div class="contact-icons">
+            <a href="tel:+573226483067" class="icon-btn" title="Llamar">
+              <img src="imagenes/icono-telefono.png" alt="" />
+            </a>
+            <a
+              href="https://wa.me/573226483067"
+              class="icon-btn"
+              title="WhatsApp"
+              target="_blank"
+            >
+              <img src="imagenes/icono-mensaje.png" alt="" />
+            </a>
+            <a
+              href="https://www.google.com/maps/dir//6.174262875693272,-75.34788140181657"
+              class="icon-btn"
+              title="Cómo llegar"
+              target="_blank"
+            >
+              <img src="imagenes/icono-ubicacion.png" alt="" />
+            </a>
+          </div>
         </div>
 
-        <div class="content-wrapper">
-            <div class="info-section">
-                <div class="info-item">
-                    <div class="info-label">Dirección</div>
-                    <div class="info-value">
-                        Autopista Medellín-Bogotá #45-132<br>
-                        La Ciudadela, Marinilla<br>
-                        Antioquia, Colombia
-                    </div>
-                </div>
-
-                <div class="info-item">
-                    <div class="info-label">Ubicación</div>
-                    <div class="info-value">
-                        Km 39, Autopista Medellín-Bogotá<br>
-                        (A 0.8 km del centro de Marinilla)
-                    </div>
-                </div>
-
-                <div class="info-item">
-                    <div class="info-label">Teléfono</div>
-                    <div class="info-value">
-                        <a href="tel:+573226483067">+57 3226483067</a><br>
-                    </div>
-                </div>
-
-                <div class="info-item">
-                    <div class="info-label">Capacidad</div>
-                    <div class="info-value">
-                        52 habitaciones<br>
-                        Capacidad hasta 180 personas
-                    </div>
-                </div>
-
-                <div class="contact-icons">
-                    <a href="tel:+573226483067" class="icon-btn" title="Llamar">
-                        <img src="imagenes/icono-telefono.png" alt="">
-                    </a>
-                    <a href="https://wa.me/573226483067" class="icon-btn" title="WhatsApp" target="_blank">
-                        <img src="imagenes/icono-mensaje.png" alt="">
-                    </a>
-                    <a href="https://www.google.com/maps/dir//6.174262875693272,-75.34788140181657" class="icon-btn" title="Cómo llegar" target="_blank">
-                        <img src="imagenes/icono-ubicacion.png" alt="">
-                    </a>
-                </div>
-            </div>
-
-            <div class="map-container">
-                <iframe 
-                    src="https://www.google.com/maps?q=6.174262875693272,-75.34788140181657&hl=es&z=15&output=embed"
-                    allowfullscreen="" 
-                    loading="lazy" 
-                    referrerpolicy="no-referrer-when-downgrade">
-                </iframe>
-            </div>
+        <div class="map-container">
+          <iframe
+            src="https://www.google.com/maps?q=6.174262875693272,-75.34788140181657&hl=es&z=15&output=embed"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          >
+          </iframe>
         </div>
+      </div>
     </section>
 
     <section class="testimonio-section">
-        <div class="lado-reserva">
-            <div class="fondo-reserva">
-                <div class="reserva-contenido">
-                    <p class="reserva-subtitulo">Hacemos de tu descanso una experiencia única, combinando tranquilidad y un servicio que convierte cada momento en un</p>
-                    <h2 class="reserva-titulo"><span>Sueño Real</span></h2>
-                    <a href="inicio_sesion.php" class="btn">Reservar</a>
-                </div>
-            </div>
+      <div class="lado-reserva">
+        <div class="fondo-reserva">
+          <div class="reserva-contenido">
+            <p class="reserva-subtitulo">
+              Hacemos de tu descanso una experiencia única, combinando
+              tranquilidad y un servicio que convierte cada momento en un
+            </p>
+            <h2 class="reserva-titulo"><span>Sueño Real</span></h2>
+            <a href="inicio_sesion.php" class="btn">Reservar</a>
+          </div>
         </div>
+      </div>
 
-        <div class="lado-testimonio">
-            <div class="testimonio-contenido">
-                <p class="testimonio-texto">
-                    La estadia en el Hotel Sueño Real fue simplemente maravillosa. La habitacion era super comoda y con un ambiente moderno que me hizo sentir como en casa. El personal fue amable en todo momento y siempre dispuesto a ayudar. La tranquilidad del lugar y la buena ubicacion en Marinilla hicieron que mi viaje fuera perfecto. Definitivamente volveria a hospedarme aqui.
-                </p>
-                <div class="testimonio-autor">
-                    <div class="autor-avatar">
-                        <img src="imagenes/icono-usuario.png" alt="">
-                    </div>
-                    <div class="autor-info">
-                        <h4>Cristina Zapata Morales</h4>
-                        <p>Huesped</p>
-                    </div>
-                </div>
+      <div class="lado-testimonio">
+        <div class="testimonio-contenido">
+          <p class="testimonio-texto">
+            La estadia en el Hotel Sueño Real fue simplemente maravillosa. La
+            habitacion era super comoda y con un ambiente moderno que me hizo
+            sentir como en casa. El personal fue amable en todo momento y
+            siempre dispuesto a ayudar. La tranquilidad del lugar y la buena
+            ubicacion en Marinilla hicieron que mi viaje fuera perfecto.
+            Definitivamente volveria a hospedarme aqui.
+          </p>
+          <div class="testimonio-autor">
+            <div class="autor-avatar">
+              <img src="imagenes/icono-usuario.png" alt="" />
             </div>
+            <div class="autor-info">
+              <h4>Cristina Zapata Morales</h4>
+              <p>Huesped</p>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
-        
-  <footer>
-    <img class="logo" src="imagenes/LogoHotel.png" alt="">
-  </footer>
-  <script src="app.js"></script>
-</body>
+
+    <footer>
+      <img class="logo" src="imagenes/LogoHotel.png" alt="" />
+    </footer>
+    <script src="app.js"></script>
+  </body>
 </html>

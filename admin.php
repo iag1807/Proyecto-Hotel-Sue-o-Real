@@ -72,11 +72,12 @@ function getClaseHab($hab, $habs_activas) {
 
 function getBadgeEstado($estado) {
     $map = [
+        'pendiente' => 'badge-pendiente',
         'confirmada' => 'badge-confirmada',
         'finalizada'  => 'badge-finalizada',
         'cancelada'  => 'badge-cancelada',
     ];
-    return $map[$estado] ?? 'badge-confirmada';
+    return $map[$estado] ?? 'badge-pendiente';
 }
 
 $current_page        = $_SERVER['PHP_SELF'];
@@ -97,7 +98,7 @@ $active_clientes     = ($current_page == '/HotelSueñoReal/cruds/ver_clientes.ph
 <link rel="shortcut icon" href="imagenes/LogoHotel.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Marcellus&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap" rel="stylesheet"/>
 </head>
 <body>
 
@@ -110,11 +111,11 @@ $active_clientes     = ($current_page == '/HotelSueñoReal/cruds/ver_clientes.ph
     <li><a href="admin.php"<?php echo $active_inicio; ?>>
       <span class="icon">⌂</span> Inicio
     </a></li>
-    <li><a href="./cruds/ver_habitaciones.php"<?php echo $active_habitaciones; ?>>
-      <span class="icon">◫</span> Habitaciones
-    </a></li>
     <li><a href="./cruds/ver_reservas.php"<?php echo $active_reservas; ?>>
       <span class="icon">◻</span> Reservaciones
+    </a></li>
+    <li><a href="./cruds/ver_habitaciones.php"<?php echo $active_habitaciones; ?>>
+      <span class="icon">◫</span> Habitaciones
     </a></li>
     <li><a href="./cruds/ver_clientes.php"<?php echo $active_clientes; ?>>
       <span class="icon">◈</span> Huéspedes

@@ -36,11 +36,11 @@ $active_clientes = ($current_page == '/HotelSueñoReal/cruds/ver_clientes.php') 
     <li><a href="../admin.php"<?php echo $active_inicio; ?>>
       <span class="icon">⌂</span> Inicio
     </a></li>
-    <li><a href="ver_habitaciones.php"<?php echo $active_habitaciones; ?>>
-      <span class="icon">◫</span> Habitaciones
-    </a></li>
     <li><a href="ver_reservas.php"<?php echo $active_reservas; ?>>
       <span class="icon">◻</span> Reservaciones
+    </a></li>
+    <li><a href="ver_habitaciones.php"<?php echo $active_habitaciones; ?>>
+      <span class="icon">◫</span> Habitaciones
     </a></li>
     <li><a href="ver_clientes.php"<?php echo $active_clientes; ?>>
       <span class="icon">◈</span> Huéspedes
@@ -48,7 +48,7 @@ $active_clientes = ($current_page == '/HotelSueñoReal/cruds/ver_clientes.php') 
   </ul>
 
   <div class="sidebar-bottom">
-    <a href="iniciodesesion/cerrarsesion.php" class="logout-btn">
+    <a href="../iniciodesesion/cerrarsesion.php" class="logout-btn">
       <span>⏻</span> Cerrar sesión
     </a>
   </div>
